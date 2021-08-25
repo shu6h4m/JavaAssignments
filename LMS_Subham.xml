@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Librabry
+[
+<!ELEMENT Library (Books,Reg_People,Librarian)>
+<!ATTLIST Library
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Books (Book)+>
+<!ATTLIST Books
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Reg_People (Member)+>
+<!ATTLIST Reg_People
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Librarian (Name,Lname,Join_Date,Med_leaves,Salary)>
+<!ATTLIST Librarian
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Book (Title,Author,ISBN,Publisher)>
+<!ATTLIST Book 
+xmlns CDATA #FIXED '' 
+ISBN CDATA #REQUIRED>
+
+<!ELEMENT Member (Name,Lname,Phone,id_proof,bookIssued,Date,Fine)>
+<!ATTLIST Member
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED>
+
+<!ELEMENT Join_Date (#PCDATA)>
+<!ATTLIST Join_Date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Med_leaves (#PCDATA)>
+<!ATTLIST Med_leaves
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Salary (#PCDATA)>
+<!ATTLIST Salary
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Title (#PCDATA)>
+<!ATTLIST Title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Author (#PCDATA)>
+<!ATTLIST Author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ISBN (#PCDATA)>
+<!ATTLIST ISBN
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Publisher (#PCDATA)>
+<!ATTLIST Publisher
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Phone (#PCDATA)>
+<!ATTLIST Phone
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT id_proof (#PCDATA)>
+<!ATTLIST id_proof
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT bookIssued (#PCDATA)>
+<!ATTLIST bookIssued
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Date (#PCDATA)>
+<!ATTLIST Date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Fine (#PCDATA)>
+<!ATTLIST Fine
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Name (#PCDATA)>
+<!ATTLIST Name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Lname (#PCDATA)>
+<!ATTLIST Lname
+  xmlns CDATA #FIXED ''>
+]
+>
+
+<Library>
+   <Books>
+      <Book>
+         <Title>Half Girlfriend</Title>
+         <Author>Chetan Bhagat</Author>
+         <ISBN>isbn_1122</ISBN>
+         <Publisher>warner books</Publisher>
+      </Book>
+      
+      <Book>
+         <Title>Database Manegment System</Title>
+         <Author>henary</Author>
+         <ISBN>isbn_1289</ISBN>
+         <Publisher>Oracle</Publisher>
+      </Book>
+      
+      <Book>
+         <Title>Harry Potter</Title>
+         <Author>D. A. shell</Author>
+         <ISBN>isbn_2345</ISBN>
+         <Publisher>petersan</Publisher>
+      </Book>
+      
+   </Books>
+   
+   <Reg_People>
+      <Member id="123123">
+         <Name>Subham</Name>
+         <Lname>Sharma</Lname>
+         <Phone>9992680009</Phone>
+         <bookIssued>isbn_2345</bookIssued>
+          <Date>15-07-2021</Date>
+        <Fine>10.00</Fine>
+      </Member>
+      
+      <Member id="12313">
+         <Name>Rahul</Name>
+         <Lname>Banga</Lname>
+         <Phone>1231233455</Phone>
+         <id_proof>23456789</id_proof>
+         <bookIssued>isbn_1289</bookIssued>
+          <Date>15-07-2021</Date>
+        <Fine>0.0</Fine>
+      </Member>
+      
+      <Member id="12323">
+         <Name>Kejri</Name>
+         <Lname>Wall</Lname>
+         <Phone>7896543219</Phone>
+         <id_proof>23456</id_proof>
+         <bookIssued>isbn_1122</bookIssued>
+         <Date>15-07-2021</Date>
+        <Fine>0.0</Fine>
+      </Member>
+       
+   </Reg_People>
+   
+   <Librarian>
+      
+        <Name>Naina</Name>
+        <Lname>Ji</Lname>
+        <Join_Date>12-12-1212</Join_Date>
+        <Med_leaves>8</Med_leaves>
+        <Salary>25000</Salary> 
+        
+   </Librarian>
+      
+</Library>
