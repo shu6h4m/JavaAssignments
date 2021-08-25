@@ -1,4 +1,4 @@
-# LAB ASSIGNMENT
+# LAB ASSIGNMENTS
 
 ## Pattern - H
 
